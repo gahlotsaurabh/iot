@@ -2,6 +2,7 @@ const httpStatus = require('http-status');
 const catchAsync = require('../utils/catchAsync');
 const { espService } = require('../services');
 const { publish } = require('../services/mqttService');
+const pick = require('../utils/pick');
 
 const createEsp = catchAsync(async (req, res) => {
     const esp = await espService.createEsp(req.body);
@@ -24,7 +25,7 @@ const getEsp = catchAsync(async (req, res) => {
 });
 
 const updateEsp = catchAsync(async (req, res) => {
-    publish("1234567890", req.body.status);
+    publish(req.body.uniqueId, req.body.status);
     const esp = await espService.updateEspById(req.params.espId, req.body);
     res.send(esp);
 });
