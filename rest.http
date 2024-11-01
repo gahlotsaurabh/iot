@@ -1,0 +1,18 @@
+POST http://localhost:3000/v1/esps
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "proto1",
+    "status": "opened",
+    "uniqueId": "1234567890"
+}
+
+###
+PATCH http://localhost:3000/v1/esps/6723673eb8e5d4affb6123af
+Accept: application/json
+Content-Type: application/json
+
+{
+    "status": "closed"
+}
