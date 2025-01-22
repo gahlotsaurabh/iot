@@ -16,6 +16,9 @@ const getEspById = async (id) => {
 };
 
 const updateEspById = async (espId, updateBody) => {
+    console.log('Update Request for ESP ID:', espId);
+    console.log('Update Body:', updateBody);
+
     const esp = await getEspById(espId);
     if (!esp) {
         throw new ApiError(httpStatus.NOT_FOUND, 'ESP not found');

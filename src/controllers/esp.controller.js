@@ -3,6 +3,7 @@ const catchAsync = require('../utils/catchAsync');
 const { espService } = require('../services');
 const { publish } = require('../services/mqttService');
 const pick = require('../utils/pick');
+const ApiError = require('../utils/ApiError');
 
 const createEsp = catchAsync(async (req, res) => {
     const esp = await espService.createEsp(req.body);
@@ -35,10 +36,26 @@ const deleteEsp = catchAsync(async (req, res) => {
     res.status(httpStatus.NO_CONTENT).send();
 });
 
+const getDoorStatus = catchAsync(async (req, res) => {
+    const { espId } = req.params;
+    const esp = await espService.getEspById(espId);
+
+    if (!esp) {
+        throw new ApiError(httpStatus.NOT_FOUND, 'ESP not found');
+    }
+
+    res.status(httpStatus.OK).send({
+        message: 'User successfully logged in',
+        espId: esp.id,
+        status: esp.status,
+    });
+});
+
 module.exports = {
     createEsp,
     getEsps,
     getEsp,
     updateEsp,
     deleteEsp,
+    getDoorStatus,
 };

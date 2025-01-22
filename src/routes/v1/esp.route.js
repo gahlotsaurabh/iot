@@ -1,7 +1,7 @@
 const express = require('express');
 const auth = require('../../middlewares/auth');
 const validate = require('../../middlewares/validate');
-const espValidation = require('../../validations/esp.validation.js');
+const espValidation = require('../../validations/esp.validation');
 const espController = require('../../controllers/esp.controller');
 
 const router = express.Router();
@@ -16,5 +16,9 @@ router
     .get(auth('getEsps'), validate(espValidation.getEsp), espController.getEsp)
     .patch(validate(espValidation.updateEsp), espController.updateEsp)
     .delete(auth('manageEsps'), validate(espValidation.deleteEsp), espController.deleteEsp);
+
+router
+    .route('/:espId/status')
+    .get(validate(espValidation.getEsp), espController.getDoorStatus);
 
 module.exports = router;
