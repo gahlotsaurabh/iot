@@ -848,9 +848,9 @@
   integrity sha512-NVkb4p4YjI8E3O6+1m8I+8JlMpFZwfSbPGdaw0wXuyPRTEz0SLKwBUWNSO7Maoi8tQMPC8JLZNWkrcKPI7/sLA==
 
 "@types/readable-stream@^4.0.0", "@types/readable-stream@^4.0.5":
-  version "4.0.16"
-  resolved "https://registry.npmjs.org/@types/readable-stream/-/readable-stream-4.0.16.tgz"
-  integrity sha512-Fvp+8OcU8PyV90KTk5tR/rI8OjD3MP5NUow5rjOsZo+9zxf4p4soJtK9j4V6yeG30TH6rZxqRaP4JLa8lNNTNQ==
+  version "4.0.18"
+  resolved "https://registry.npmjs.org/@types/readable-stream/-/readable-stream-4.0.18.tgz"
+  integrity sha512-21jK/1j+Wg+7jVw1xnSwy/2Q1VgVjWuFssbYGTREPUBeZ+rqVFl2udq0IkxzPC0ZhOzVceUbyIACFZKLqKEBlA==
   dependencies:
     "@types/node" "*"
     safe-buffer "~5.1.1"
@@ -1346,9 +1346,9 @@ bl@^2.2.1:
     safe-buffer "^5.1.1"
 
 bl@^6.0.8:
-  version "6.0.16"
-  resolved "https://registry.npmjs.org/bl/-/bl-6.0.16.tgz"
-  integrity sha512-V/kz+z2Mx5/6qDfRCilmrukUXcXuCoXKg3/3hDvzKKoSUx8CJKudfIoT29XZc3UE9xBvxs5qictiHdprwtteEg==
+  version "6.0.18"
+  resolved "https://registry.npmjs.org/bl/-/bl-6.0.18.tgz"
+  integrity sha512-2k76XmWCuvu9HTvu3tFOl5HDdCH0wLZ/jHYva/LBVJmc9oX8yUtNQjxrFmbTdXsCSmIxwVTANZPNDfMQrvHFUw==
   dependencies:
     "@types/readable-stream" "^4.0.0"
     buffer "^6.0.3"
@@ -3077,11 +3077,6 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8= sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
-
-fsevents@^2.1.2, fsevents@~2.3.2:
-  version "2.3.2"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
-  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
 ftp@^0.3.10:
   version "0.3.10"
@@ -4950,19 +4945,19 @@ mpath@0.8.4:
   resolved "https://registry.npmjs.org/mpath/-/mpath-0.8.4.tgz"
   integrity sha512-DTxNZomBcTWlrMW76jy1wvV37X/cNNxPW1y2Jzd4DZkAaC5ZGsm8bfGfNOthcDuRJujXLqiuS6o3Tpy0JEoh7g==
 
-mqtt-packet@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/mqtt-packet/-/mqtt-packet-9.0.0.tgz"
-  integrity sha512-8v+HkX+fwbodsWAZIZTI074XIoxVBOmPeggQuDFCGg1SqNcC+uoRMWu7J6QlJPqIUIJXmjNYYHxBBLr1Y/Df4w==
+mqtt-packet@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.npmjs.org/mqtt-packet/-/mqtt-packet-9.0.1.tgz"
+  integrity sha512-koZF1V/X2RZUI6uD9wN5OK1JxxcG1ofAR4H3LjCw1FkeKzruZQ26aAA6v2m1lZyWONZIR5wMMJFrZJDRNzbiQw==
   dependencies:
     bl "^6.0.8"
     debug "^4.3.4"
     process-nextick-args "^2.0.1"
 
-mqtt@^5.10.1:
-  version "5.10.1"
-  resolved "https://registry.npmjs.org/mqtt/-/mqtt-5.10.1.tgz"
-  integrity sha512-hXCOki8sANoQ7w+2OzJzg6qMBxTtrH9RlnVNV8panLZgnl+Gh0J/t4k6r8Az8+C7y3KAcyXtn0mmLixyUom8Sw==
+mqtt@^5.10.3:
+  version "5.10.3"
+  resolved "https://registry.npmjs.org/mqtt/-/mqtt-5.10.3.tgz"
+  integrity sha512-hA/6YrUS4fywhBGCjH/XXUuLeueJiPqruVVWjK2A24Ma4KcWfZ/x8x07aoesBV+HXDWBC08tbT4IWfSXNW0Jtw==
   dependencies:
     "@types/readable-stream" "^4.0.5"
     "@types/ws" "^8.5.9"
@@ -4972,7 +4967,7 @@ mqtt@^5.10.1:
     help-me "^5.0.0"
     lru-cache "^10.0.1"
     minimist "^1.2.8"
-    mqtt-packet "^9.0.0"
+    mqtt-packet "^9.0.1"
     number-allocator "^1.0.14"
     readable-stream "^4.4.2"
     reinterval "^1.1.0"
@@ -5959,9 +5954,9 @@ readable-stream@^3.6.0:
     util-deprecate "^1.0.1"
 
 readable-stream@^4.2.0:
-  version "4.5.2"
-  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-4.5.2.tgz"
-  integrity sha512-yjavECdqeZ3GLXNgRXgeQEdz9fvDDkNKyHnbHRFtOr7/LcfgBcmct7t/ET+HaCTqfh06OzoAxrkN/IfjJBVe+g==
+  version "4.6.0"
+  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-4.6.0.tgz"
+  integrity sha512-cbAdYt0VcnpN2Bekq7PU+k363ZRsPwJoEEJOEtSJQlJXzwaxt3FIo/uL+KeDSGIjJqtkwyge4KQgD2S2kd+CQw==
   dependencies:
     abort-controller "^3.0.0"
     buffer "^6.0.3"
